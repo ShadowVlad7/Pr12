@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="utf-8">
+    <title>Test field</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="difficulty-container">
+            <p>Оберіть рівень складності:</p>
+            <div class="difficulty-options">
+                <label><input type="radio" name="difficulty" value="easy" checked> Початковий</label>
+                <label><input type="radio" name="difficulty" value="medium"> Середній</label>
+                <label><input type="radio" name="difficulty" value="hard"> Високий</label>
+            </div>
+        </div>
+        <div class="card" id="flashcard">
+            <div class="card-word"></div>
+        </div>
+        <input type="text" id="translation-input" placeholder="Введіть переклад">
+        <div class="button-container">
+            <button id="check-button">Перевірити</button>
+        </div>
+        <div class="step-container">
+            <div>Крок <span id="current-step">1</span> з <span id="total-steps">10</span></div>
+        </div>
+        <div class="stat">
+            <div>Вірно: <span id="correct-count">0</span></div>
+            <div>Невірно: <span id="incorrect-count">0</span></div>
+        </div>
+    </div>
+
+    <div id="results-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Ваш рівень знання мови: <span id="language-level"></span></p>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
